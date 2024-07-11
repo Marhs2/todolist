@@ -1,0 +1,64 @@
+.bk{
+    background-color: aliceblue;
+    width: 500px;
+    margin: auto;
+}
+
+.allend{
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#input{
+    font-size: 20px;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+#send{
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 20px 40px;
+}
+#box{
+    background-color: burlywood;
+    height: auto
+}
+
+input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+}
+
+summary{
+    font-size: 30px;
+    list-style: none;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary button{
+    font-size: 20px;
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 20px ;
+}
+
+
+summary:nth-child(1){
+    padding: 0;
+    text-align: center;
+    display: block;
+}
+
+summary:nth-child(1) p{
+    font-size: 12px;
+    padding: 10px;
+}

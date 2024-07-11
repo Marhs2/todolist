@@ -1,6 +1,9 @@
 const input = document.querySelector("#input")
 const send = document.querySelector("#send")
 const box = document.querySelector("#box")
+const alldel = document.querySelector("#all-del")
+const allcom = document.querySelector('#all-com')
+const alluncom = document.querySelector('#all-uncom')
 
 send.addEventListener('click', function() {
     addtodo();
@@ -41,24 +44,34 @@ input.addEventListener('keydown', function(event){
         })
 
 
+
+
+
         checkbox.addEventListener('click', function done(){ 
             
             if(confirm("성공했나요")){
                 alert("성공을 축하합니다")
                 newspan.style.textDecoration = "line-through"
                 newspan.style.color = "red"
+
+                alldel.addEventListener('click', function(){
+                    box.removeChild(div)
+                })
+
             }else{
                 alert("화이팅하세요!")
                 checkbox.checked = false;
             }
-        }
-        )
+        })
+    
+
+
     }else{
         alert("내용을 입력하세요")
     }
 
-    }
 
 
+  
 
-
+}

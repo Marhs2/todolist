@@ -2,8 +2,6 @@ const input = document.querySelector("#input")
 const send = document.querySelector("#send")
 const box = document.querySelector("#box")
 const alldel = document.querySelector("#all-del")
-const allcom = document.querySelector('#all-com')
-const alluncom = document.querySelector('#all-uncom')
 
 send.addEventListener('click', function() {
     addtodo();
@@ -44,6 +42,10 @@ input.addEventListener('keydown', function(event){
         })
 
 
+        
+ 
+
+
 
 
 
@@ -57,13 +59,11 @@ input.addEventListener('keydown', function(event){
                 alldel.addEventListener('click', function(){
                     box.removeChild(div)
                 })
-
             }else{
                 alert("화이팅하세요!")
                 checkbox.checked = false;
             }
         })
-    
 
 
     }else{
@@ -73,5 +73,4 @@ input.addEventListener('keydown', function(event){
 
 
   
-
-}
+  }

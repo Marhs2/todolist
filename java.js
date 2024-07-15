@@ -41,6 +41,10 @@ input.addEventListener('keydown', function(event){
             box.removeChild(div)
         })
 
+        newspan.addEventListener('click', (e)=>{
+            newspan.classList.toggle("red")
+        })
+
 
         
  
